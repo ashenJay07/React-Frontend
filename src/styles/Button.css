@@ -1,0 +1,22 @@
+.btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* .btn--link::after {
+  content: "➡";
+  padding-left: 5px;
+} */
+
+.btn--large {
+  font-size: 2rem;
+}
