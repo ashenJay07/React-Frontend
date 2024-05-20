@@ -6,7 +6,7 @@ const MainLayout = ({ children, fullScreen = false }) => {
   return (
     <div className={`layout-container ${fullScreen ? "full-screen" : ""}`}>
       <NavBar />
-      <main>{children}</main>
+      <main className="main-bg">{children}</main>
       <Footer />
     </div>
   );
