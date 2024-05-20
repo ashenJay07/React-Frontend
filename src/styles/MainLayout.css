@@ -34,3 +34,12 @@
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.7);
 }
+
+.main-bg {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(14, 121, 178, 0.47111344537815125) 100%
+  );
+  flex: 1;
+}

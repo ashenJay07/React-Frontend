@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "styles/DragAndDrop.css";
-import axiosInstance from "utils/axiosInstance";
+import axiosInstance, { axiosInstanceNgork } from "utils/axiosInstance";
 
 const DragAndDrop = () => {
   const inputRef = useRef();
@@ -41,14 +41,18 @@ const DragAndDrop = () => {
       localStorage.setItem("fileName", selectedFile.name);
       formData.append("file", selectedFile);
 
-      const response = await axiosInstance.post("generate/upload-file", formData, {
-        onUploadProgress: (progressEvent) => {
-          const percentCompleted = Math.round(
-            (progressEvent.loaded * 100) / progressEvent.total
-          );
-          setProgress(percentCompleted);
-        },
-      });
+      const response = await axiosInstanceNgork.post(
+        "generate/upload-file",
+        formData,
+        {
+          onUploadProgress: (progressEvent) => {
+            const percentCompleted = Math.round(
+              (progressEvent.loaded * 100) / progressEvent.total
+            );
+            setProgress(percentCompleted);
+          },
+        }
+      );
 
       setUploadStatus("done");
 

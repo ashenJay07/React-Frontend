@@ -1,12 +1,49 @@
 .container {
   margin: 0 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-height: calc(100vh - 240px);
 }
 
 .top-section {
-  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  row-gap: 70px;
   align-items: last baseline;
-  margin-bottom: 100vh;
+  /* margin-bottom: 36vh; */
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.download-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+svg path,
+svg rect {
+  fill: #0e79b2;
+}
+
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 80px 0;
+}
+
+.loader-wrapper .loader-text {
+  font-size: 1.6rem;
+  color: #0e79b2;
+  font-weight: 700;
 }
