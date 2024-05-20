@@ -10,7 +10,7 @@ export const axiosInstanceNgork = axios.create({
   // baseURL: process.env.REACT_APP_BASE_URL,
   baseURL: "https://pleased-vigorously-ostrich.ngrok-free.app/",
   headers: {
-    "ngrok-skip-browser-warning": "true",
+    "ngrok-skip-browser-warning": "5678",
   },
   // We add other configuration options here, such as headers
 });
